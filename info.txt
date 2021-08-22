@@ -1,0 +1,29 @@
+A web app to minimize the total number of cash transactions needed to settle all the dependencies among the connected users 
+and resolve the complex network.
+
+that a group of people (friends, relatives, etc) can use to manage and simplify debts. shared expenses and balances with housemates, trips, groups, friends, and family.
+
+This web app lets you do cash-settlement with your friends in an easy way.
+All you have to do is enter the amount one each person owes to another person.
+The web app will give you a simplified solution with a great visualization feature.
+
+
+A lot of college students can use this app to divide expenses among themselves. Suppose there is a group of freinds and 
+there are some dependencies like Ram owe Rs 100 to Raju, and Raju owe Rs 50 to Shyam and Shyam owe Rs 30 to Shamu. So,
+if there are lot of people in group, it becomes a complex network and we want to make this simpler so that the total number of transactions
+needed to settle all the dependencies is minimized. 
+
+[1] Since each person will have some certain debit and certain credit, so in order to simplyfy his transactions the first step is to calculate balance of each person will have after all the transaction has happened.
+
+[2] make a list of debitors and make a list of creditor and 
+We pick the largest debitor and try to settle as many transactions from the credit list by picking the persons who have the largest credit. 
+
+If we simply use array, than we have to search max debitor for n times, so Linear Search - n^2
+The complexity of adding an element and finding the max element is order LogN operation. 
+
+Max heap of persons wi th debot and max heap of persons with credit - NlogN
+
+Multiset - set containing duplicate value
+
+The edge between two people represent the amount that has to be transacted between them.
+
